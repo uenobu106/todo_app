@@ -132,6 +132,16 @@
 
 ※ 現時点で正解のモデル図を作成する必要はまだありません。現時点での想定として作ってみましょう（今後のステップで間違いと思ったら改修していくイメージです）
 
+- tasks
+  - title:string
+  - explanation:text 
+  - todo:boolean
+  - doing:boolean
+  - done:boolean
+  - due:date
+- users
+ - name:string 
+
 ### ステップ5: データベースの接続設定（周辺設定）をしよう
 
 - まずGitで新たにトピックブランチを切りましょう
