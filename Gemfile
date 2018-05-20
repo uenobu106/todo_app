@@ -41,7 +41,13 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'slim-rails'
+  gem 'rubocop'
+  gem 'annotate'
+  
 end
 
 group :development do
@@ -55,3 +61,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner'
+end

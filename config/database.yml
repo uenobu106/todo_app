@@ -1,20 +1,21 @@
-
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: localhost
+  
 
 development:
   <<: *default
   database: todo-app_development
+  password: password
 
 test:
   <<: *default
   database: todo-app_test
+  password: password
 
 production:
   <<: *default
-  databese: todo-app
+  databese: todo-app_production
   username: todo-app
-  password: <%= ENV['appname_DATABASE_PASSWORD'] %>
+  password: <%= ENV['TODO-APP_DATABASE_PASSWORD'] %>
