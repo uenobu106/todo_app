@@ -46,6 +46,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'slim-rails'
   gem 'rubocop'
+  gem 'annotate'
   
 end
 
